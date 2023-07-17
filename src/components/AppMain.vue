@@ -6,7 +6,7 @@ export default{
         return{
             ApiUrl:'http://localhost:8000/api/projects',
             callToApi:'',
-            projects:[]
+            projects:[],
         }
     },
     mounted(){
@@ -20,12 +20,13 @@ export default{
 }
 </script>
 <template>
-    <div>
-        <template v-for="(oggetto, index) in this.projects" :key="index">
-            <div>
-                <h1>{{ oggetto.title}}</h1>
-                {{ oggetto.content }}
+    <h1 class="text-4xl font-bold text-center mt-16">All Project preview</h1>
+    <div class="flex flex-wrap justify-between p-32">
+        <template class="" v-for="(oggetto, index) in this.projects">
+            <div class="w-96 p-8">
+                <h1 class="text-3xl font-semibold">{{ oggetto.title}}</h1>
+                <span>{{ oggetto.content }}</span>
             </div>
-        </template>
+    </template>
     </div>
 </template>
