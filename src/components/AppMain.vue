@@ -32,7 +32,7 @@ export default{
      <h1 class="text-6xl font-semibold text-center mt-16 text-white">All Project preview</h1>
     <div class="flex flex-wrap justify-around">
         <template v-for="(oggetto, index) in projects">
-        <ProjectCard :prova="oggetto"></ProjectCard>
+        <ProjectCard :AllProjects="oggetto"></ProjectCard>
     </template>
     </div>
 </template>

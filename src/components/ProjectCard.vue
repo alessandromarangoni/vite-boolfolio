@@ -3,7 +3,7 @@ import AppMain from './AppMain.vue'
     export default{ 
         name:'ProjectCard',
         props: {
-            prova:Object
+            AllProjects:Object
         }
     }
 </script>
@@ -16,10 +16,10 @@ import AppMain from './AppMain.vue'
         </div>
 
         <h2 class="text-4xl text-center pt-8">
-            {{ this.prova.title}}
+            {{ this.AllProjects.title}}
         </h2>
         <p class="text-center mx-auto w-56">
-            {{ this.prova.content}}
+            {{ this.AllProjects.content}}
         </p>
     </div>
 </template>
