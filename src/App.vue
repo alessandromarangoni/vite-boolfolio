@@ -1,18 +1,17 @@
 <script>
-  import AppMain from './components/AppMain.vue'
   import axios from 'Axios' 
+  import AppMain from './components/AppMain.vue'  
+  import AppHeader from './components/AppHeader.vue'
   export default {
     components: {
       AppMain,
+      AppHeader
     },
   }
 </script>
 
 <template>
-  <!-- questo header simula un appheader che ci fa navigare tra le page -->
-  <header> 
-    menu
-  </header>
+  <AppHeader />
 
   <router-view></router-view>
 
