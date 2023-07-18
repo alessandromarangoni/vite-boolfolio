@@ -1,5 +1,5 @@
 <script>
-import AppMain from './AppMain.vue';
+import AppMain from '../AppMain.vue';
     export default{ 
             name:'AppHome',
             components: {
