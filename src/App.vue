@@ -3,13 +3,21 @@
   import axios from 'Axios' 
   export default {
     components: {
-      AppMain
+      AppMain,
     },
   }
 </script>
 
 <template>
-  <AppMain />
+  <!-- questo header simula un appheader che ci fa navigare tra le page -->
+  <header> 
+    menu
+  </header>
+
+  <router-view></router-view>
+
+
+
 </template>
 
 <style scoped>
