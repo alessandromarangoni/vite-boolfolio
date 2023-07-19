@@ -12,6 +12,10 @@ import axios from 'axios'
             }
         },
         methods: {
+            prova(){
+                console.log('ciao');
+            },
+
             getApiData(id) {
             axios.get(this.ApiUrl + id ).then(resp => {
                 this.loading=true;
@@ -27,6 +31,7 @@ import axios from 'axios'
             });
         },
         mounted() {
+            this.prova(),
             this.getApiData($route.params.id);
         },
         },
