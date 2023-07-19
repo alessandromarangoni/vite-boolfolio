@@ -21,6 +21,11 @@ import AppMain from './AppMain.vue'
         <p class="text-center mx-auto w-56">
             {{ this.AllProjects.content}}
         </p>
+        <img :src="'http://127.0.0.1:8000/storage/' + this.AllProjects.image" alt="" class="rounded-2xl">
+
+        <p class="text-center pt-3 mx-auto w-56 font-bold">
+           project type: {{ this.AllProjects.type.name}}
+        </p>
     </div>
 </template>
 

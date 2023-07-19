@@ -4,7 +4,7 @@ export default{
 }
 </script>
 <template>
-    <div>
-        ciaoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+    <div class="text-center">
+        Io sono una prova
     </div>
 </template>

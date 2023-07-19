@@ -12,6 +12,7 @@ export default{
             ApiUrl: "http://localhost:8000/api/projects",
             callToApi: "",
             projects: [],
+            loadingMessage:''
         };
     },
     methods: {
@@ -20,6 +21,11 @@ export default{
                 this.callToApi = resp.data;
                 this.projects = this.callToApi.results;
                 console.log(this.projects)
+            }).catch( err => {
+                this.loading=false;
+                console.log(err)
+                this.loadingMessage = err.message;
+                this.$router.push({name:'errore' , params: { code: 404 }})
             });
         }
     },
