@@ -5,11 +5,13 @@ import AppMain from './AppMain.vue'
         props: {
             AllProjects:Object
         }
+        
     }
 </script>
 <template>
 
-    <div class="w-96 m-8 p-6 rounded bg-amber-300">
+    <router-link :to="'project/'+ this.AllProjects.id">
+        <div class="w-96 m-8 p-6 rounded bg-amber-300">
         
         <div class="w-6 h-6 bg-blue-500 rounded-full mx-auto my-2 flex items-center">
             <div class="w-4 h-4 bg-blue-900 rounded-full mx-auto"></div>
@@ -27,6 +29,8 @@ import AppMain from './AppMain.vue'
            project type: {{ this.AllProjects.type.name}}
         </p>
     </div>
+    </router-link>
+
 </template>
 
 
